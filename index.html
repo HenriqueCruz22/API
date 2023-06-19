@@ -2,27 +2,35 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <title>Tradutor</title>
+  <style>
+            .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            }
+            h1 {
+            text-align: center;
+            }
+            textarea {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 10px;
+            }
+            button {
+            display: block;
+            margin: 0 auto;
+            }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1>TRADUTOR</h1>
-    <div class="content">
-      <div class="div-Selects">
-        <select class="select-From"></select>
-        <select class="select-To"></select>
-      </div>
-      <div class="div-Textareas">
-        <textarea id="text-area-From" rows="8" placeholder="Digitar texto"></textarea>
-        <textarea id="text-area-To" rows="8" placeholder="Tradução" disabled></textarea>
-      </div>
-      <button id="button-Translate">TRADUZIR</button>
-    </div>
+    <textarea id="text-area-From" placeholder="Digite o texto a ser traduzido"></textarea>
+    <button id="button-Translate">TRADUZIR</button>
+    <textarea id="text-area-To" placeholder="Tradução" disabled></textarea>
   </div>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
