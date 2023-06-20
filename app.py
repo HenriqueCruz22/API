@@ -1,7 +1,11 @@
+import os
 from flask import Flask, render_template, request, jsonify
 from translate import Translator
 
 app = Flask(__name__)
+app.static_folder = os.path.abspath("C:\xampp\htdocs\Api com python\API")  # Atualize para o nome da pasta do seu projeto
+
+# Resto do código do Flask...
 
 @app.route('/')
 def index():
@@ -18,3 +22,4 @@ def translate():
 
 if __name__ == '__main__':
     app.run()
+
